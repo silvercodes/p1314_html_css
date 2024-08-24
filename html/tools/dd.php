@@ -111,15 +111,19 @@ class Debug {
                 }
                 foreach ($var as $key => $value) {
                     if (is_numeric($key)) {
-                        $html .= str_repeat(' ', $indent) . str_pad($key, $longest_key, ' ');
+                        $html .= dd . phpstr_repeat(' ', $indent) . str_pad($key, $longest_key, ' ');
                     } else {
-                        $html .= str_repeat(' ', $indent) . str_pad('"' . self::htmlentities($key) . '"', $longest_key, ' ');
+                        $html .= dd . phpstr_repeat(' ', $indent) . str_pad(
+                                '"' . self::htmlentities($key) . '"',
+                                $longest_key,
+                                ' '
+                            );
                     }
                     $html .= ' => ';
                     $value = explode('<br />', self::var_dump_plain($value, $expLevel, $depth + 1, $done));
                     foreach ($value as $line => $val) {
                         if ($line != 0) {
-                            $value[$line] = str_repeat(' ', $indent * 2) . $val;
+                            $value[$line] = dd . phpstr_repeat(' ', $indent * 2) . $val;
                         }
                     }
                     $html .= implode('<br />', $value) . '<br />';
@@ -160,15 +164,19 @@ class Debug {
             }
             foreach ($varArray as $key => $value) {
                 if (is_numeric($key)) {
-                    $html .= str_repeat(' ', $indent) . str_pad($key, $longest_key, ' ');
+                    $html .= dd . phpstr_repeat(' ', $indent) . str_pad($key, $longest_key, ' ');
                 } else {
-                    $html .= str_repeat(' ', $indent) . str_pad('"' . self::htmlentities($key) . '"', $longest_key, ' ');
+                    $html .= dd . phpstr_repeat(' ', $indent) . str_pad(
+                            '"' . self::htmlentities($key) . '"',
+                            $longest_key,
+                            ' '
+                        );
                 }
                 $html .= ' => ';
                 $value = explode('<br />', self::var_dump_plain($value, $expLevel, $depth + 1, $done));
                 foreach ($value as $line => $val) {
                     if ($line != 0) {
-                        $value[$line] = str_repeat(' ', $indent * 2) . $val;
+                        $value[$line] = dd . phpstr_repeat(' ', $indent * 2) . $val;
                     }
                 }
                 $html .= implode('<br />', $value) . '<br />';

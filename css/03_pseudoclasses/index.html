@@ -1,0 +1,356 @@
+<!--<!doctype html>-->
+<!--<html lang="en">-->
+<!--<head>-->
+<!--    <meta charset="UTF-8">-->
+<!--    <meta name="viewport"-->
+<!--          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">-->
+<!--    <meta http-equiv="X-UA-Compatible" content="ie=edge">-->
+
+<!--    <style>-->
+<!--        .wrapper {-->
+
+<!--        }-->
+<!--        .signal {-->
+
+<!--        }-->
+<!--        .main {-->
+<!--            background-color: #dc2f55;-->
+<!--        }-->
+<!--        div:hover {-->
+<!--            color: red;-->
+<!--        }-->
+<!--    </style>-->
+
+<!--    <title>Document</title>-->
+<!--</head>-->
+<!--<body>-->
+
+<!--    <div class="wrapper signal">-->
+<!--        Vasia-->
+<!--    </div>-->
+
+<!--</body>-->
+<!--</html>-->
+
+
+
+
+<!--:checked-->
+
+<!--<!doctype html>-->
+<!--<html lang="en">-->
+<!--<head>-->
+<!--    <meta charset="UTF-8">-->
+<!--    <meta name="viewport"-->
+<!--          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">-->
+<!--    <meta http-equiv="X-UA-Compatible" content="ie=edge">-->
+<!--    <title>Document</title>-->
+
+<!--    <style>-->
+<!--        input[type="checkbox"]:checked + span {-->
+<!--            background-color: red;-->
+<!--        }-->
+
+<!--    </style>-->
+
+<!--</head>-->
+<!--<body>-->
+
+<!--<input type="checkbox"><span>ch1</span><br>-->
+<!--<input type="checkbox"><span>ch2</span><br>-->
+<!--<input type="checkbox"><span>ch3</span><br>-->
+<!--<input type="checkbox"><span>ch4</span><br>-->
+<!--<input type="checkbox"><span>ch5</span><br>-->
+
+<!--</body>-->
+<!--</html>-->
+
+
+
+
+<!--:focus-->
+
+<!--<!doctype html>-->
+<!--<html lang="en">-->
+<!--<head>-->
+<!--    <meta charset="UTF-8">-->
+<!--    <meta name="viewport"-->
+<!--          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">-->
+<!--    <meta http-equiv="X-UA-Compatible" content="ie=edge">-->
+
+<!--    <style>-->
+<!--        button:focus {-->
+<!--            outline: 2px solid red;-->
+<!--            outline-offset: 2px;-->
+<!--        }-->
+<!--    </style>-->
+
+<!--    <title>Document</title>-->
+<!--</head>-->
+<!--<body>-->
+
+<!--<button>BUTTON</button>-->
+
+<!--</body>-->
+<!--</html>-->
+
+
+
+
+<!--:hover-->
+<!--<!doctype html>-->
+<!--<html lang="en">-->
+<!--<head>-->
+<!--    <meta charset="UTF-8">-->
+<!--    <meta name="viewport"-->
+<!--          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">-->
+<!--    <meta http-equiv="X-UA-Compatible" content="ie=edge">-->
+<!--    <title>Document</title>-->
+
+<!--    <style>-->
+<!--        .link {-->
+<!--            color: black;-->
+<!--            text-decoration-color: blue;-->
+<!--            /*transition: background-color 1s linear;*/-->
+
+<!--        }-->
+<!--        .link:hover {-->
+<!--            color: white;-->
+<!--            background-color: blue;-->
+<!--            /*transition: background-color 0.3s linear;*/-->
+<!--        }-->
+<!--    </style>-->
+
+<!--</head>-->
+<!--<body>-->
+
+<!--<ul>-->
+<!--    <li><a class="link" href="#">One</a></li>-->
+<!--    <li><a class="link" href="#">Two</a></li>-->
+<!--    <li><a class="link" href="#">Three</a></li>-->
+<!--</ul>-->
+
+<!--</body>-->
+<!--</html>-->
+
+
+
+
+
+<!--:not-->
+<!--<!doctype html>-->
+<!--<html lang="en">-->
+<!--<head>-->
+<!--    <meta charset="UTF-8">-->
+<!--    <meta name="viewport"-->
+<!--          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">-->
+<!--    <meta http-equiv="X-UA-Compatible" content="ie=edge">-->
+<!--    <title>Document</title>-->
+
+<!--    <style>-->
+<!--        ul li:not(.last) {-->
+<!--            color: blue;-->
+<!--        }-->
+<!--    </style>-->
+
+<!--</head>-->
+<!--<body>-->
+
+<!--<ul>-->
+<!--    <li>Lorem ipsum.</li>-->
+<!--    <li>Lorem ipsum.</li>-->
+<!--    <li class="last">Lorem ipsum dolor.</li>-->
+<!--</ul>-->
+
+<!--</body>-->
+<!--</html>-->
+
+
+
+
+
+<!--:nth-child-->
+<!--E:nth-child()-->
+<!--<!doctype html>-->
+<!--<html lang="en">-->
+<!--<head>-->
+<!--    <meta charset="UTF-8">-->
+<!--    <meta name="viewport"-->
+<!--          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">-->
+<!--    <meta http-equiv="X-UA-Compatible" content="ie=edge">-->
+
+<!--    <style>-->
+<!--        /*p:nth-child(3) {*/-->
+<!--        /*    color:red;*/-->
+<!--        /*}*/-->
+
+<!--        /*p:nth-child(even) {*/-->
+<!--        /*    background-color: red;*/-->
+<!--        /*}*/-->
+<!--        /*p:nth-child(odd) {*/-->
+<!--        /*    background-color: blue;*/-->
+<!--        /*}*/-->
+
+<!--        /*p:nth-child(3n) {*/-->
+<!--        /*    background-color: red;*/-->
+<!--        /*}*/-->
+
+<!--        /*p:nth-child(2n+1) {*/-->
+<!--        /*    background-color: red;*/-->
+<!--        /*}*/-->
+
+<!--        /*p:nth-last-child(2) {*/-->
+<!--        /*    background-color: red;*/-->
+<!--        /*}*/-->
+
+<!--        /*p:first-child {*/-->
+<!--        /*    background-color: green;*/-->
+<!--        /*}*/-->
+
+<!--        /*p:last-child {*/-->
+<!--        /*    background-color: blue;*/-->
+<!--        /*}*/-->
+
+<!--        /*p:nth-child(n+2):nth-child(-n+5) {*/-->
+<!--        /*    background-color: #dc2f55;*/-->
+<!--        /*}*/-->
+
+
+<!--    </style>-->
+
+<!--    <title>Document</title>-->
+<!--</head>-->
+<!--<body>-->
+<!--    <p>Lorem ipsum dolor.</p>-->
+<!--    <p>Distinctio, eaque sed!</p>-->
+<!--    <p>Nostrum, sunt, tempore!</p>-->
+<!--    <p>Lorem ipsum dolor.</p>-->
+<!--    <p>Distinctio, eaque sed!</p>-->
+<!--    <p>Nostrum, sunt, tempore!</p>-->
+<!--</body>-->
+<!--</html>-->
+
+
+
+
+<!--nth-of-type-->
+<!--<!doctype html>-->
+<!--<html lang="en">-->
+<!--<head>-->
+<!--    <meta charset="UTF-8">-->
+<!--    <meta name="viewport"-->
+<!--          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">-->
+<!--    <meta http-equiv="X-UA-Compatible" content="ie=edge">-->
+<!--    <title>Document</title>-->
+
+<!--    <style>-->
+<!--        p:nth-of-type(odd) {-->
+<!--            background-color: green;-->
+<!--        }-->
+<!--        p:nth-of-type(even) {-->
+<!--            background-color: blue;-->
+<!--        }-->
+<!--    </style>-->
+
+<!--</head>-->
+<!--<body>-->
+
+<!--<h1>Lorem ipsum dolor.</h1>-->
+<!--<p>Lorem ipsum dolor sit.</p>-->
+<!--<p>Illum sed voluptas voluptatibus.</p>-->
+<!--<p>Eaque ipsa quam quibusdam.</p>-->
+
+<!--</body>-->
+<!--</html>-->
+
+
+
+<!--PRACTICE1-->
+<!--<!doctype html>-->
+<!--<html lang="en">-->
+<!--<head>-->
+<!--    <meta charset="UTF-8">-->
+<!--    <meta name="viewport"-->
+<!--          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">-->
+<!--    <meta http-equiv="X-UA-Compatible" content="ie=edge">-->
+
+<!--    <style>-->
+<!--        /*Выбрать item_2*/-->
+
+<!--        /*ul:first-of-type > li:nth-child(2) {*/-->
+<!--        /*    background-color: mediumvioletred;*/-->
+<!--        /*}*/-->
+
+<!--        /*.wrapper > h3 + ul li:last-child {*/-->
+<!--        /*    background-color: mediumvioletred;*/-->
+<!--        /*}*/-->
+
+<!--        .wrapper > ul:first-of-type li:nth-last-child(1) {-->
+<!--             background-color: mediumvioletred;-->
+<!--         }-->
+
+<!--    </style>-->
+
+<!--    <title>Document</title>-->
+<!--</head>-->
+<!--<body>-->
+
+
+
+<!--    <div class="wrapper">-->
+<!--        <h3>Lorem ipsum.</h3>-->
+<!--        <ul>-->
+<!--            <li>item_1</li>-->
+<!--            <li>item_2</li>-->
+<!--        </ul>-->
+<!--        <ul>-->
+<!--            <li>item_3</li>-->
+<!--            <li>item_4</li>-->
+<!--        </ul>-->
+<!--    </div>-->
+
+<!--</body>-->
+<!--</html>-->
+
+
+
+
+<!--PRACTICE2-->
+<!--<!doctype html>-->
+<!--<html lang="en">-->
+<!--<head>-->
+<!--    <meta charset="UTF-8">-->
+<!--    <meta name="viewport"-->
+<!--          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">-->
+<!--    <meta http-equiv="X-UA-Compatible" content="ie=edge">-->
+
+<!--    <style>-->
+<!--        /*Выбрать первый элемент списка только если всего их 6*/-->
+<!--        /*li:nth-last-child(6):first-child {*/-->
+<!--        /*    background-color: tomato;*/-->
+<!--        /*}*/-->
+
+<!--        /*Выбрать все элементы только если всего их 6*/-->
+<!--        li:nth-last-child(6):first-child,-->
+<!--        li:nth-last-child(6):first-child ~ li {-->
+<!--            background-color: tomato;-->
+<!--        }-->
+<!--        -->
+<!--    </style>-->
+
+<!--    <title>Document</title>-->
+<!--</head>-->
+<!--<body>-->
+
+<!--<ul>-->
+<!--    <li>Lorem ipsum dolor.</li>-->
+<!--    <li>Quae quaerat, vero!</li>-->
+<!--    <li>Dolorum, qui repellat!</li>-->
+<!--    <li>Alias, harum totam!</li>-->
+<!--    <li>Quasi, quos sunt!</li>-->
+<!--    <li>Aliquam aspernatur, iure.</li>-->
+<!--</ul>-->
+
+<!--</body>-->
+<!--</html>-->
+
