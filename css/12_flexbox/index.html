@@ -9,48 +9,37 @@
 
     <style>
         .wrapper {
-            background: #808097;
-            /*height: 200px;*/
-
-
-            display: flex;
-
-                /*flex-direction: row;*/
-                /*flex-wrap: nowrap;*/
-            flex-flow: row wrap;
-
+            width: 200px;
+            margin: 0 auto;
         }
-
-        .item {
-            background: darkblue;
-            color: white;
-            font-size: 2rem;
-            margin: 5px;
-            padding: 10px;
-        }
-        .child {
-            background: white;
+        .btn {
+            display: block;
+            width: 200px;
             height: 20px;
-            width: 20px;
-            margin: 5px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            padding: 5px 10px;
+            background: darkolivegreen;
+            color: #fff;
+            font-weight: 800;
+            text-align: center;
+            text-decoration: none;
+            text-transform: uppercase;
         }
     </style>
 
 </head>
 <body>
 
+
 <div class="wrapper">
-    <div class="item item-1">
-        <div class="child"></div>
-        <div class="child"></div>
-    </div>
-    <div class="item item-2"></div>
-    <div class="item item-3"></div>
-    <div class="item item-4"></div>
-    <div class="item item-5"></div>
-    <div class="item item-6"></div>
-    <div class="item item-7"></div>
+    <a href="pages/flex.html" class="btn">Flex intro</a>
+    <a href="pages/flex1.html" class="btn">Центрирование</a>
+    <a href="pages/flex2.html" class="btn">По сторонам</a>
+    <a href="pages/flex3.html" class="btn">Меню</a>
+    <a href="pages/flex4.html" class="btn">Аккордеон</a>
 </div>
+
 
 </body>
 </html>
